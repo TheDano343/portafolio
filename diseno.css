@@ -1,126 +1,96 @@
-/* Esto hara que todo lo que haya en el html, tenga estas caraceristicas */
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: monospace;
+    font-style: normal;
 }
+
 /*********************************/
 
 body {
-    background: #18171c;
+    background: black;
 }
 
+
+
+/* Inicio */
+header {
+    display: flex;
+    min-height: 70px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo .img {
+    height: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover {
+    color: #00F0FF;
+}
+
+@media (max-width:700px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+}
+
+
+/* Presentacion */
+.pc_letras,
 .letras_chicas {
     color: white;
-
-    font-family: monospace;
-    white-space: nowrap;
-    display: flex;
-    border-right: 4px solid;
-
-    animation: glitch 3s infinite;
-    overflow: hidden;
 }
-
-.pc_letras {
-    color: white;
-    font-size: 4.5vw;
-    font-family: monospace;
-    white-space: nowrap;
-    display: block;
-    border-right: 4px solid;
-
-    animation: glitch 3s infinite;
-    overflow: hidden;
-}
-
-@keyframes glitch {
-    0% {
-        text-shadow: #b4cf06 0px 0px;
-    }
-
-    50% {
-        text-shadow: #ff0000 -8px 0px;
-    }
-
-    0% {
-        text-shadow: #b4cf06 0px 0px;
-    }/* section {
-    margin-bottom: 40px;
-} */
-}
-/* Maquetacion */
-section {
-    margin-bottom: 40px;
-}
-
-.galeria
-{
-    padding: 20px;
-}
-/**************************************/
-
-
-/* Texto y tipografia */
-/* Texto */
-h1 {
-    font-family: Vegur, 'PT Sans', Verdana, sans-serif;
-    color: white;
-    text-align: center;
-    font-size: 1.8vw;
-}
-
-h2 {
-    font-family: monospace;
-    color: white;
-    margin-bottom: 5px;
-}
-
-h3 {
-    color: white;
-    font-family: monospace;
-    font-size: 1.8vw;
-}
-
-p {
-    font-family: monospace;
-    font-size: 1.8vw;
-    color: white;
-}
-
-h5 {
-    font-family: monospace;
-}
-
-/*****************************************/
-
-/* centramiento de div */
 
 .caja {
     display: flex;
-    height: 100vh;
-    place-items: center;
+    align-items: center;
+    justify-content: center;
+    padding: 250px;
 }
 
-.contenedor {
-    margin: auto;
-    padding: 20px;
+.caja div {
+    width: 230px;
+    height: 100px;
 }
 
-.contenedores
-{
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
+.titulo {
+    border-right: 3px solid whitesmoke;
+    padding-right: 5px;
 }
-/******************************************/
 
-/* Galeria  */
-.titulo
-{
+.subtitulo {
+    padding-left: 20px;
+}
+
+/* Proyectos realizados */
+
+.seccion {
     padding: 10px;
+    color: white;
+    text-align: center;
 }
 
 img {
@@ -135,11 +105,8 @@ img {
     margin: 40px auto;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 40px;
-    /* height: 100; */
-
-
 }
 
 .caja-galeria img {
@@ -148,230 +115,141 @@ img {
     object-fit: cover;
 }
 
-.centrado
-{
-    text-align: center;
-}
-/****************************/
-
-/* Experiencia */
-
-.titulo {
-    color: white;
+.centrado {
     text-align: center;
 }
 
-.contenedor_linea {
-    margin: 50px;
-    width: 80%;
-    margin-bottom: 20px;
+.item {
+    padding: 45px;
 }
 
-.contenido {
-    margin-bottom: 10px;
-    position: relative;
+/*******/
+
+
+/* Tegnologias */
+
+.seccion {
+    padding-bottom: 40px;
 }
 
-.contenido::before {
-    content: '';
-    position: absolute;
-    width: 3px;
-    height: 120%;
-    background: blue;
-    left: -15px;
-    top: 10px;
+.n-tegnologias {
+    color: whitesmoke;
 }
 
-.contenido::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: red;
-    left: -23px;
-    top: 5px;
+.image-grid {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-
-/****************************/
-
-/* Habilidades tecnicas */
-
-
-.lista {
-    position: relative;
-    width: 350px;
-    flex: 30px;
-    padding: 20px;
-}
-
-.lista h2 {
-    padding: 10px 20px;
-    font-weight: 600;
-}
-
-.lista ul {
-    position: relative;
-    padding: 20px;
-}
-
-.lista ul li {
-    position: relative;
-    list-style: none;
-    padding: 15px 0;
-    /* border: 3px solid rgba(red, green, rgb(255, 255, 255), alpha); */
-    border-bottom: 2px solid rgb(252, 252, 252);
-}
-
-
-/* Contactame */
-
-.contactos
-{
-    text-align: center;
-
-    padding: 30px;
-    font-size: 28px;
-    color: white;
-}
-
-.link
-{
-    text-align: center;
-    margin-top: 20px;
-    border: 1px solid white;
-    border-width: 2px;
-    padding: 20px;
-
-    width: 290px;
+.grid-image {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    flex-basis: 100%;
+    width: 25%;
+    object-fit: cover;
+    padding-bottom: 15px;
 
-    border-radius: 40px;
-
-    font-size: 18px;
 }
 
-a
-{
-    text-decoration: none;
+.contenedor-tegnologia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+@media only screen and (min-width: 640px) {
+    .grid-image {
+        flex-basis: 50%;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .grid-image {
+        flex-basis: 33.333%;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .grid-image {
+        flex-basis: 25%;
+    }
+}
+
+/*******/
+
+/* Contacto */
+.contacto,
+.titulos-proyectos,
+.descripcion-proyecto {
     color: white;
-    transition: color 1s;
 }
 
-a:hover
-{
-    color: black;
+.login-container {
+    background: black;
+    padding: 40px;
+    border-radius: 8px;
+    width: 280px;
+}
 
+
+.links {
+    color: black;
+}
+
+.boton {
+    border: 2px solid black;
+    background-color: whitesmoke;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.blanco {
+    border-color: whitesmoke;
+    color: black;
+}
+
+.blanco:hover {
     background: white;
 }
 
 
-/* Noticias */
+.form-group {
+    padding: 15px;
+}
 
-.noticia
-{
+/*******/
+
+
+/** Proyectos **/
+
+.publicacion {
     width: 90%;
     max-width: 1200px;
     margin: 40px auto;
+}
+
+.titulos-proyectos {
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.descripcion-proyecto {
+    padding: 15px;
     text-align: justify;
-}
-/********************/
-
-/* Header */
-
-.toggle-menu
-{
-    position: absolute;
-    top: 0.5rem;
-    right: 1.5rem;
-    cursor: pointer;
-    filter: invert(1);
-    width: 40px;
-    z-index: 1;
+    font-size: 19px;
+    line-height: 1.5;
 }
 
-@media screen and (min-width: 768px){
-    .toggle-menu{
-        display: none;
-    }
+.imagen-noticia{
+    margin-bottom: 20px;
 }
 
-.main-menu
-{
-    list-style: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* background-color: wheat; */
-    transition: transform 0.3s;
-    transform: translateY(-100%);
-}
-
-.main-menu--show
-{
-    transform: translateY(0);
-}
-
-.toggle-menu_checkbox
-{
-    display: none;
-}
-
-.toggle-menu_checkbox:checked + .main-menu
-{
-    transform: translateY(0);
-}
-
-@media screen and (min-width: 768px){
-    .main-menu{
-        flex-direction: row;
-        transform: translateY(0);
-    }
-}
-
-.main-menu_item
-{
-    padding: 1em;
-    margin: 10px 20px;
-}
-
-.main-menu_link
-{   
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-/* Enlaces */
-
-.item
-{
-    scroll-margin-top: 8ex;
-}
-
-/********************/
-         
-/* Media Queries */
-/*  */
-@media (max-width: 768px) {
-    .contenedores,.contenedor_linea, .lista, .caja {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-/**********************************/
-
-/* header responsive */
-
-
-/***************************/
-/***************************/
+/*******/
