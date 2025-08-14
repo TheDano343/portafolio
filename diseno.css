@@ -252,4 +252,13 @@ img {
     margin-bottom: 20px;
 }
 
+.bordes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    object-fit: cover;
+    width: 75%;
+}
 /*******/
