@@ -5,61 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
-    <link rel="stylesheet" href="../portafolio/diseno.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
+<body class="bg-black font-[Montserrat]">
 
-    <header class="item" id="inicio">
-        <div class="logo">
-            <!-- <img src="" class="logo-img"> -->
-        </div>
+    <header id="inicio">
 
-        <nav class="main-nav">
-            <ul id="main-menu" class="main-menu">
-                <a href="#inicio" class="main-menu_link">Inicio</a>
-                <a href="#proyectos" class="main-menu_link">Proyectos realizados</a>
-                <a href="#tecnologia" class="main-menu_link">Tecnología</a>
-                <a href="#contacto" class="main-menu_link">Contacto</a>
+        <nav id="navbar" class="bg-black font-[Montserrat]">
+            <ul
+                class="peer-checked:block hidden sm:block float-right mr-10 lg:flex leading-[80px] space-x-4 text-white uppercase rounded fixed lg:relative h-[100vh] lg:h-0 w-[100%] lg:w-fit top-20 lg:top-0  transition-all duration-300 lg:transition-none text-center bg-black">
+                <a href="#inicio" class="hover:bg-violet-600">Inicio</a>
+                <a href="#proyectos" class="hover:bg-violet-600">Proyectos realizados</a>
+                <a href="#tecnologia" class="hover:bg-violet-600">Tecnología</a>
+                <a href="#contacto" class="hover:bg-violet-600">Contacto</a>
             </ul>
         </nav>
     </header>
 
-    <div class="caja">
-        <div class="titulo">
-            <h1 class="pc_letras">Daniel Saúl Curiel Hernández</h1>
+    <div class="p-70">
+        <div class="py-7">
+            <h1 class="font-mono flex items-center justify-center text-white text-center text-3xl font-bold">Daniel Saúl
+                Curiel
+                Hernández</h1>
         </div>
 
-        <div class="subtitulo">
-            <h2 class="letras_chicas">Soy Desarrollador backend de Laravel, PHP y SQL</h2>
+        <div>
+            <h2 class="flex items-center justify-center text-white text-center text-base font-serif">Soy Desarrollador
+                backend de
+                Laravel y .NET</h2>
         </div>
     </div>
 
-    <section id="proyectos" class="item">
-        <h2 class="seccion">Proyectos realizados</h2>
+    <section id="proyectos">
 
-        <div class="caja-galeria">
-            <div class="imagen-item">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 p-10">
+
+            <div class="col-span-full">
+                <h2 class="flex items-center justify-center text-white text-center text-3xl pb-10 font-mono font-bold">
+                    Proyectos
+                    realizados</h2>
+
+            </div>
+
+
+            <div>
                 <a href="proyectos/proyecto1.html">
-                    <img src="imagenes/crudtablasrelacionadasLaravel/Captura de pantalla 2025-10-08 135516.png" alt="">
+                    <img class="w-full h-auto rounded-md"
+                        src="imagenes/crudtablasrelacionadasLaravel/Captura de pantalla 2025-10-08 135516.png">
                 </a>
             </div>
 
-            <div class="imagen-item">
+            <div>
                 <a href="proyectos/proyecto2.html">
-                    <img src="imagenes/crudtablasrelacionadasPOO/Captura de pantalla 2025-09-18 185648.png" alt="">
+                    <img class="h-auto max-w-full rounded-md"
+                        src="imagenes/crudtablasrelacionadasPOO/Captura de pantalla 2025-09-18 185648.png">
                 </a>
             </div>
 
-            <div class="imagen-item">
-                <a href="proyectos/proyecto3.html">
-                    <img src="imagenes/blogphppoo/Captura de pantalla 2025-09-18 115636.png" alt="">
+            <div>
+                <a href="proyectos/proyecto5.html">
+                    <img class="h-auto max-w-full rounded-md"
+                        src="imagenes/blogphppoo/Captura de pantalla 2025-09-18 115636.png">
                 </a>
             </div>
 
-            <div class="imagen-item">
+            <div>
                 <a href="proyectos/proyecto4.html">
-                    <img src="imagenes/ecommerce/Captura de pantalla 2025-09-17 144204.png" alt="">
+                    <img class="h-auto max-w-full rounded-md"
+                        src="imagenes/ecommerce/Captura de pantalla 2025-09-17 144204.png">
                 </a>
             </div>
         </div>
@@ -95,43 +109,60 @@
                 <h1 class="n-tegnologias">Javascript</h1>
             </div>
 
-            <div class="contenedor-tegnologia">
-                <img class="grid-image" src="./frameworks/Bootstrap.png">
-                <h1 class="n-tegnologias">Bootstrap</h1>
+            <div class="py-6">
+                <img class="h-auto max-w-full" src="./frameworks/Bootstrap.png">
+                <h1 class="flex items-center justify-center text-white text-center text-3xl font-bold">Bootstrap
+                </h1>
             </div>
 
-            <div class="contenedor-tegnologia">
-                <img class="grid-image" src="./frameworks/tailwind.png">
-                <h1 class="n-tegnologias">Tailwind CSS</h1>
+            <div>
+                <img class="h-auto max-w-full" src="./frameworks/tailwind.png">
+                <h1 class="flex items-center justify-center text-white text-center text-3xl font-bold">Tailwind CSS
+                </h1>
             </div>
 
-            <div class="contenedor-tegnologia">
-                <img class="grid-image" src="./frameworks/github.png">
-                <h1 class="n-tegnologias">GitHub</h1>
+            <div>
+                <img class="h-auto max-w-full" src="./frameworks/github.png">
+                <h1 class="flex items-center justify-center text-white text-center text-3xl font-bold">GitHub</h1>
             </div>
 
+            
         </div>
     </section>
 
-    <section id="contacto" class="item">
-        <div class="centrado contenedor-tegnologia">
-            <div class="login-container">
-                <h2 class="seccion contacto">Contáctame</h2>
+    <section id="contacto">
 
-                <div class="form-group">
-                    <a href="https://github.com/TheDano343">
-                        <button class="boton blanco">GitHub</button>
-                    </a>
-                </div>
+        <div class="p-60">
 
-                <div class="form-group">
-                    <a href="https://www.linkedin.com/in/daniel-curiel-0745721b0/">
-                        <button class="boton blanco">LinkedIn</button>
-                    </a>
-                </div>
+            <h2 class="flex items-center justify-center text-white text-center text-3xl font-mono font-bold py-6">
+                Contáctame
+            </h2>
+
+            <div class="flex items-center justify-center py-2">
+                <a href="https://www.linkedin.com/in/daniel-curiel-0745721b0/">
+                    <button type="button"
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">LinkedIn</button>
+                </a>
             </div>
+
+            <div class="flex items-center justify-center">
+                <a href="https://github.com/TheDano343">
+                    <button type="button"
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                        GitHub
+                    </button>
+                </a>
+            </div>
+
+
+
+
         </div>
+
+
     </section>
+
 
 </body>
+
 </html>

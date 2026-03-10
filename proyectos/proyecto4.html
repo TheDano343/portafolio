@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
-
-    <link rel="stylesheet" href="../diseno.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
+<body class="bg-black font-[Montserrat]">
 
-    <section class="item">
-        <div class="publicacion">
-            <h2 class="titulos-proyectos">Leviathaner Pc´s E-Commerce</h2>
-            <p class="descripcion-proyecto">
+    <section>
+        <div class="p-30">
+            <h2
+                class="flex items-center justify-center text-white text-center text-3xl font-bold pb-5 font-mono font-bold">
+                Leviathaner Pc´s E-Commerce</h2>
+            <p class="flex items-center justify-center text-white text-justify text-base font-serif py-6">
                 Visión general En este proyecto se realizó una página en línea para la venta de computadoras para
                 distintas categorías y usos, la cual cuenta con su sección de usuarios y de administradores.
                 <br>
@@ -34,44 +35,65 @@
                 Laravel Stripe Este paquete tiene la posibilidad de trabajar en conjunto con Laravel Cashier para
                 realizar la función de pagos en línea.
             </p>
-            <img class="imagen-noticia" src="../imagenes/ecommerce/Captura de pantalla 2025-09-17 144204.png">
-            <img class="imagen-noticia" src="../imagenes/ecommerce/Captura de pantalla 2024-11-06 131017.png">
-            <img class="imagen-noticia" src="../imagenes/ecommerce/Captura de pantalla 2024-11-06 131049.png">
-            <img class="imagen-noticia" src="../imagenes/ecommerce/Captura de pantalla 2024-11-06 131110.png">
-            <img class="imagen-noticia" src="../imagenes/ecommerce/Captura de pantalla 2024-11-06 131227.png">
-            <img class="imagen-noticia" src="../imagenes/ecommerce/Captura de pantalla 2024-11-06 131240.png">
-            <img class="imagen-noticia" src="../imagenes/ecommerce/Captura de pantalla 2024-11-06 132956.png">
-            <img class="imagen-noticia" src="../imagenes/ecommerce/Captura de pantalla 2025-10-08 154216.png">
+
+            <div class="py-6">
+                <img class="rounded-md" src="../imagenes/ecommerce/Captura de pantalla 2025-09-17 144204.png">
+            </div>
+
+            <div class="py-6">
+                <img class="rounded-md" src="../imagenes/ecommerce/Captura de pantalla 2024-11-06 131017.png">
+            </div>
+
+            <div class="py-6">
+                <img class="rounded-md" src="../imagenes/ecommerce/Captura de pantalla 2024-11-06 131049.png">
+            </div>
+
+            <div class="py-6">
+                <img class="rounded-md" src="../imagenes/ecommerce/Captura de pantalla 2024-11-06 131110.png">
+            </div>
+
+            <div class="py-6">
+                <img class="rounded-md" src="../imagenes/ecommerce/Captura de pantalla 2024-11-06 131227.png">
+            </div>
+
+            <div class="py-6">
+                <img class="rounded-md" src="../imagenes/ecommerce/Captura de pantalla 2024-11-06 131240.png">
+            </div>
+
+            <div class="py-6">
+                <img class="rounded-md" src="../imagenes/ecommerce/Captura de pantalla 2024-11-06 132956.png">
+            </div>
+
+            <img class="rounded-md" src="../imagenes/ecommerce/Captura de pantalla 2025-10-08 154216.png">
+
         </div>
     </section>
 
-    <section class="item">
-        <h2 class="seccion">Tecnologias Utilizadas</h2>
+    <section>
 
-        <div class="image-grid bordes" id="tecnologia">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-50">
 
-            <div class="contenedor-tegnologia">
-                <img class="grid-image" src="../frameworks/HTML5.png">
+
+            <div class="col-span-full">
+                <h2
+                    class="flex items-center justify-center text-white text-center text-3xl font-bold pb-10 font-mono font-bold">
+                    Tecnologias Utilizadas</h2>
             </div>
 
-            <div class="contenedor-tegnologia">
-                <img class="grid-image" src="../frameworks/php.png">
-            </div>
+            <img src="../frameworks/HTML5.png">
 
-            <div class="contenedor-tegnologia">
-                <img class="grid-image" src="../frameworks/Laravel.png">
-            </div>
+            <img src="../frameworks/php.png">
 
-            <div class="contenedor-tegnologia">
-                <img class="grid-image" src="../frameworks/CSS.png">
-            </div>
+            <img src="../frameworks/Laravel.png">
 
-            <div class="contenedor-tegnologia">
-                <img class="grid-image" src="../frameworks/Bootstrap.png">
-            </div>
+            <img src="../frameworks/CSS.png">
+
+            <img src="../frameworks/Bootstrap.png">
 
         </div>
+
     </section>
 
 </body>
 
+</html>

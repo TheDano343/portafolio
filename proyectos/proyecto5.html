@@ -5,46 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
-    <link rel="stylesheet" href="../diseno.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
+<body class="bg-black font-[Montserrat]">
 
-    <section class="item">
-        <div class="publicacion">
-            <h2 class="titulos-proyectos">Blog Web Creado en HTML,Bootstrap,Laravel y MySQL.</h2>
-            <p class="descripcion-proyecto">
+    <section>
+        <div class="p-30">
+            <h2
+                class="flex items-center justify-center text-white text-center text-3xl font-bold pb-5 font-mono font-bold">
+                Blog Web Creado en HTML,Bootstrap,Laravel y MySQL.</h2>
+            <p class="flex items-center justify-center text-white text-center text-base font-serif py-6">
                 Esté es un blog realizado con el framework Laravel en el cual se lleva la gestión de la creación,
                 edición y eliminación de las publicaciones.
             </p>
-            <img class="imagen-noticia" src="../imagenes/bloglaravel/Captura de pantalla 2025-10-15 180249.png">
-            <img class="imagen-noticia" src="../imagenes/bloglaravel/Captura de pantalla 2025-10-15 180335.png">
-            <img class="imagen-noticia" src="../imagenes/bloglaravel/Captura de pantalla 2025-10-15 180211.png">
-            <img class="imagen-noticia" src="../imagenes/bloglaravel/Captura de pantalla 2025-10-15 184430.png">
-            <img class="imagen-noticia" src="../imagenes/bloglaravel/Captura de pantalla 2025-10-15 184458.png">
+
+            <div class="py-6">
+            <img class="rounded-md" src="../imagenes/bloglaravel/Captura de pantalla 2025-10-15 180249.png">
+            </div>
+            
+            <div class="py-6">
+            <img class="rounded-md" src="../imagenes/bloglaravel/Captura de pantalla 2025-10-15 180335.png">
+            </div>
+
+            <div class="py-6">
+            <img class="rounded-md" src="../imagenes/bloglaravel/Captura de pantalla 2025-10-15 180211.png">
+            </div>
+            
+            <div class="py-6">
+            <img class="rounded-md" src="../imagenes/bloglaravel/Captura de pantalla 2025-10-15 184430.png">
+            </div>
+            
+
+            <img src="../imagenes/bloglaravel/Captura de pantalla 2025-10-15 184458.png">
         </div>
     </section>
 
-    <section class="item">
-        <h2 class="seccion">Tecnologias Utilizadas</h2>
+    <section>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-50">
 
-        <div class="image-grid bordes" id="tecnologia">
 
-            <div class="contenedor-tegnologia">
-                <img class="grid-image" src="../frameworks/HTML5.png">
-            </div>
+        <div class="col-span-full">
+            <h2
+                class="flex items-center justify-center text-white text-center text-3xl font-bold pb-10 font-mono font-bold">
+                Tecnologias Utilizadas</h2>
+        </div>
 
-            <div class="contenedor-tegnologia">
-                <img class="grid-image" src="../frameworks/php.png">
-            </div>
 
-            <div class="contenedor-tegnologia">
-                <img class="grid-image" src="../frameworks/Laravel.png">
-            </div>
-            
-            <div class="contenedor-tegnologia">
-                <img class="grid-image" src="../frameworks/Bootstrap.png">
-            </div>
+        <img class="grid-image" src="../frameworks/HTML5.png">
+
+        <img class="grid-image" src="../frameworks/php.png">
+
+        <img class="grid-image" src="../frameworks/Laravel.png">
+
+        <img class="grid-image" src="../frameworks/Bootstrap.png">
         </div>
     </section>
 
