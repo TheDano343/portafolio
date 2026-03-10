@@ -5,47 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
-    <link rel="stylesheet" href="../diseno.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
+<body class="bg-black font-[Montserrat]">
 
-    <section class="item">
-        <div class="publicacion">
-            <h2 class="titulos-proyectos">
+    <section>
+        <div class="p-30">
+            <h2
+                class="flex items-center justify-center text-white text-center text-3xl font-bold pb-5 font-mono font-bold">
                 Crud con tablas relacionadas en HTML5, PHP y MySQL
             </h2>
 
-            <p class="descripcion-proyecto">
+            <p class="flex items-center justify-center text-white text-justify text-base font-serif py-6">
                 Este CRUD con tablas relacionadas cuenta con las tablas Personas y Carreras.
                 Fue creado con fines de aprendizaje de las tecnologías HTML, PHP y MySQL.
             </p>
 
-            <img class="imagen-noticia" src="../imagenes/crudtablasrelacionadasPOO/Captura de pantalla 2025-09-18 185648.png">
-            <img class="imagen-noticia" src="../imagenes/crudtablasrelacionadasPOO/Captura de pantalla 2025-09-18 185700.png">
-            <img class="imagen-noticia" src="../imagenes/crudtablasrelacionadasPOO/Captura de pantalla 2025-09-18 185718.png">
-         
+            <img class="rounded-md" src="../imagenes/crudtablasrelacionadasPOO/Captura de pantalla 2025-09-18 185648.png">
+
+            <div class="py-6">
+                <img class="rounded-md" src="../imagenes/crudtablasrelacionadasPOO/Captura de pantalla 2025-09-18 185700.png">
+            </div>
+
+            <img class="rounded-md" src="../imagenes/crudtablasrelacionadasPOO/Captura de pantalla 2025-09-18 185718.png">
+
         </div>
     </section>
 
-    <section class="item">
-        <h2 class="seccion">Tecnologías Utilizadas</h2>
+    <section>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-50">
 
-        <div class="image-grid bordes" id="tecnologia">
 
-            <div class="contenedor-tegnologia">
-                <img class="grid-image" src="../frameworks/HTML5.png" alt="HTML5">
+            <div class="col-span-full">
+                <h2
+                    class="flex items-center justify-center text-white text-center text-3xl font-bold pb-10 font-mono font-bold">
+                    Tecnologías Utilizadas</h2>
             </div>
 
-            <div class="contenedor-tegnologia">
-                <img class="grid-image" src="../frameworks/php.png" alt="PHP">
-            </div>
+            <img src="../frameworks/HTML5.png" alt="HTML5">
 
-            <div class="contenedor-tegnologia">
-                <img class="grid-image" src="../frameworks/Bootstrap.png" alt="Bootstrap">
-            </div>
+            <img src="../frameworks/php.png" alt="PHP">
+
+            <img src="../frameworks/Bootstrap.png" alt="Bootstrap">
 
         </div>
+
     </section>
 
 </body>
